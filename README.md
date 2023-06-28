@@ -42,7 +42,8 @@ The maps are colored to represent the magnitude of the metric of interest. By ho
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 20%;
+        width: 80%;
+        height: 80%;
         padding-bottom: 10%; /* 16:9 aspect ratio */
         margin: 0 auto; /* Center the container horizontally */
     }
