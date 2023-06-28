@@ -33,7 +33,7 @@ The maps are colored to represent the magnitude of the metric of interest. By ho
 
 
 <div id="iframe-container">
-  <iframe src="https://ajchavez94.github.io/Visualization/Europe_map_A1.html" name="iframe_a" title="Iframe Example"></iframe>
+  <iframe id="my-iframe" src="https://ajchavez94.github.io/Visualization/Europe_map_A1.html" name="iframe_a" title="Iframe Example"></iframe>
 </div>
 
 <script>
