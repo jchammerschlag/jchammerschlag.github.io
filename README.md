@@ -37,11 +37,22 @@ The maps are colored to represent the magnitude of the metric of interest. By ho
 </div>
 
 <script>
+  function getDeviceAspectRatio() {
+    return window.innerWidth / window.innerHeight;
+  }
+
   function adjustIframeSize() {
     var iframeContainer = document.getElementById('iframe-container');
     var iframe = document.getElementById('my-iframe');
     var containerWidth = iframeContainer.offsetWidth;
-    var aspectRatio = 9 / 16; // Adjust this based on your iframe's aspect ratio
+    var aspectRatio;
+
+    // Check if the device is a mobile device
+    if (getDeviceAspectRatio() < 1) {
+      aspectRatio = 9 / 16; // Mobile devices have portrait orientation
+    } else {
+      aspectRatio = 16 / 9; // Other devices have landscape orientation
+    }
 
     var iframeHeight = containerWidth * aspectRatio;
     iframe.style.height = iframeHeight + 'px';
