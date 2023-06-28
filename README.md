@@ -39,15 +39,15 @@ The maps are colored to represent the magnitude of the metric of interest. By ho
 
 <style>
     .iframe-container {
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 80%;
-        padding-bottom: 25%; /* 16:9 aspect ratio */
+        padding-bottom: 80%; /* 16:9 aspect ratio */
+        margin: 0 auto; /* Center the container horizontally */
     }
 
     .iframe-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
     }
