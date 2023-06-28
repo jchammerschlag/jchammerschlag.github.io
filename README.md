@@ -43,7 +43,7 @@ The maps are colored to represent the magnitude of the metric of interest. By ho
         justify-content: center;
         align-items: center;
         width: 80%;
-        padding-bottom: 80%; /* 16:9 aspect ratio */
+        padding-bottom: 10%; /* 16:9 aspect ratio */
         margin: 0 auto; /* Center the container horizontally */
     }
 
