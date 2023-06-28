@@ -44,7 +44,7 @@ The maps are colored to represent the magnitude of the metric of interest. By ho
   function adjustIframeSize() {
     var iframeContainer = document.getElementById('iframe-container');
     var iframe = document.getElementById('my-iframe');
-    var containerWidth = iframeContainer.offsetWidth;
+    var containerWidth = iframeContainer.clientWidth;
     var aspectRatio;
 
     // Check if the device is a mobile device
@@ -64,6 +64,7 @@ The maps are colored to represent the magnitude of the metric of interest. By ho
   // Adjust the iframe size whenever the window is resized
   window.addEventListener('resize', adjustIframeSize);
 </script>
+
 
 
 
