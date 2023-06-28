@@ -32,38 +32,25 @@ The maps are colored to represent the magnitude of the metric of interest. By ho
 > <div style="text-align: justify">The ratio of segregated cycle infrasctucture to main roads, is an indicator of road coverage by cycle infrastructure. The segregated cycle infrastructure considered are: cycle tracks, shared pedestrians (cycle and pedestrian paths) and cycle lanes. While the road newtork was calculated by integrating highways labeled as "motorway","trunk", "primary","secondary",  "tertiary","motorway_link", "trunk_link", "primary_link", "secondary_link", "tertiary_link" in OSM. Please visit our methodology section to obtain more insights on the data processing. </div>
 
 
-<div id="iframe-container">
-  <iframe id="my-iframe" src="https://ajchavez94.github.io/Visualization/Europe_map_A1.html" name="iframe_a" title="Iframe Example"></iframe>
-</div>
-
-<script>
-  function getDeviceAspectRatio() {
-    return window.innerWidth / window.innerHeight;
-  }
-
-  function adjustIframeSize() {
-    var iframeContainer = document.getElementById('iframe-container');
-    var iframe = document.getElementById('my-iframe');
-    var containerWidth = iframeContainer.clientWidth;
-    var aspectRatio;
-
-    // Check if the device is a mobile device
-    if (getDeviceAspectRatio() < 1) {
-      aspectRatio = 9 / 16; // Mobile devices have portrait orientation
-    } else {
-      aspectRatio = 16 / 9; // Other devices have landscape orientation
+<style>
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
     }
 
-    var iframeHeight = containerWidth * aspectRatio;
-    iframe.style.height = iframeHeight + 'px';
-  }
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
 
-  // Adjust the iframe size on initial page load
-  adjustIframeSize();
-
-  // Adjust the iframe size whenever the window is resized
-  window.addEventListener('resize', adjustIframeSize);
-</script>
+<div class="iframe-container">
+    <iframe src="https://ajchavez94.github.io/Visualization/Europe_map_A1.html" title="Iframe Example"></iframe>
+</div>
 
 
 
