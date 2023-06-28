@@ -19,13 +19,13 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
+        <span style="padding-right:3px; padding-top: 3px; display:inline-block;">
+            <img class="manImg"
+                src="https://ecf.com/sites/ecf.com/files/field/image/ECF%20logo%20-%20landscape%20-%20blue.png"  width="250" height="150"></img>
+        </span>
         <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
         <h2 class="project-tagline">{{ page.description | default: site.description | default:
             site.github.project_tagline }}</h2>
-        <span style="padding-right:3px; padding-top: 3px; display:inline-block;">
-            <img class="manImg"
-                src="https://ecf.com/sites/ecf.com/files/field/image/ECF%20logo%20-%20landscape%20-%20blue.png"  width="350" height="250"></img>
-        </span>
         {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
         {% endif %}
